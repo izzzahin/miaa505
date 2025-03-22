@@ -206,25 +206,4 @@ with torch.no_grad():
     print(f'Accuracy of the model on the test set: {accuracy:.2f}%')
     print(f'{n_correct} / {n_samples} correct images')
 
-'''
-# Plot the training and validation losses
-plt.figure(figsize=(12, 4))
-plt.subplot(1, 2, 1)
-plt.plot(train_losses, label='Training Loss')
-plt.plot(valid_losses, label='Validation Loss')
-plt.xlabel('Epoch')
-plt.ylabel('Loss')
-plt.title('Training and Validation Loss')
-plt.legend()
 
-# Plot the training and validation accuracies
-plt.subplot(1, 2, 2)
-plt.plot(train_accuracies, label='Training Accuracy')
-plt.plot(valid_accuracies, label='Validation Accuracy')
-plt.xlabel('Epoch')
-plt.ylabel('Accuracy')
-plt.title('Training and Validation Accuracy')
-plt.legend()
-
-plt.show()
-'''
